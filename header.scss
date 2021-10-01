@@ -1,0 +1,52 @@
+@import "variables";
+
+body{
+  background: $dark-color;
+}
+
+.header{
+  max-width: 1202px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 15px 50px 15px;
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    .nav-item{
+      margin-left: 32px;
+
+      .nav-link{
+        color: $white-color;
+        font-family: Rubik, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      .nav-link:hover{
+        text-decoration: underline;
+      }
+    }
+
+    .nav-item--login{
+      margin-left: 56px;
+      border-right: 1px solid rgba(242, 242,242, 0.3);
+      padding-right: 24px;
+      font-weight: 500;
+    }
+
+    .nav-link--register{
+      background: $light-blue-color;
+      padding: 14px 32px;
+      border-radius: 32px;
+
+      font-family: Rubik, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
