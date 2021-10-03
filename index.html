@@ -6,119 +6,259 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="images/header-logo.svg" alt="">
-        </a>
-
-        <nav>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item nav-item--login">
-                    <a href="#" class="nav-link nav-link--login">Login</a>
-                </li>
-
-                <li class="nav-item nav-item--register">
-                    <a href="#" class="nav-link nav-link--register">Register</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <div class="wrapper">
-            <div class="main">
-                <div class="main-text">
-                    <p class="main-text__sale">
-                        <span>75% SAVE</span>
-                        For the Black Friday weekend
-                    </p>
-                    <h1 class="main-text__title">
-                        Fastest & secure platform to invest in crypto
-                    </h1>
-                    <p class="main-text__description">
-                        Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.
-                    </p>
-                    <div class="main-text__link">
-                        <a class="main-text__link-btn" href="#">Try for FREE</a>
-                    </div>
-
-                </div>
-
-                <div class="main-img">
-                    <img class="main-img__image" src="images/main-picture.svg" alt="">
-                </div>
+<header class="header">
+    <div class="burger-menu" onclick="burger(this)">
+        <div class="burger-menu-list">
+            <div class="burger-container">
+                <ul class="burger-list">
+                    <li><a class="list-item" href="#">Products</a></li>
+                    <li><a class="list-item" href="#">Features</a></li>
+                    <li><a class="list-item" href="#">About</a></li>
+                    <li><a class="list-item" href="#">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <a href="#" class="logo">
+        <img src="images/header-logo.svg" alt="">
+    </a>
+
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item nav-item--login">
+                <a href="#" class="nav-link nav-link--login">Login</a>
+            </li>
+
+            <li class="nav-item nav-item--register">
+                <a href="#" class="nav-link nav-link--register">Register</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section>
     <div class="wrapper">
-        <div class="stat">
-            <div class="stat-item">
-                <div class="stat-item__icon stat-item__icon--01"></div>
-                <p class="stat-item__text">
-                    <span>$30B</span>
-                    Digital Currency Exchanged
+        <div class="main">
+            <div class="main-text">
+                <p class="main-text__sale">
+                    <span>75% SAVE</span>
+                    For the Black Friday weekend
                 </p>
+                <h1 class="main-text__title">
+                    Fastest & secure platform to invest in crypto
+                </h1>
+                <p class="main-text__description">
+                    Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.
+                </p>
+                <div class="main-text__link">
+                    <a class="main-text__link-btn" href="#">Try for FREE</a>
+                </div>
+
             </div>
 
-            <div class="stat-item">
-                <div class="stat-item__icon stat-item__icon--02"></div>
-                <p class="stat-item__text">
-                    <span>10M+</span>
-                    Trusted Wallets Investor
-                </p>
-            </div>
-
-            <div class="stat-item">
-                <div class="stat-item__icon stat-item__icon--03"></div>
-                <p class="stat-item__text">
-                    <span>195</span>
-                    Countries Supported
-                </p>
+            <div class="main-img">
+                <img class="main-img__image" src="images/main-picture.svg" alt="">
             </div>
         </div>
     </div>
+</section>
 
-    <div class="wrapper">
-        <div class="text">
-            <h2 class="text__title">Check how much you can earn</h2>
-            <p class="text__description">Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
-        <div class="calc-head">
-            <input type="text" class="calc-head__input" placeholder="Enter your hash rate">
-            <select name="" id="" class="calc-head__select">
-                <option value="th">TH/s</option>
-                <option value="ph">PH/s</option>
-                <option value="eh">EH/s</option>
-            </select>
-            <button type="submit" class="calc-head__btn">Calculate</button>
-        </div>
-    </div>
-
-    <div class="page-light">
-        <div class="calc-foot">
-            <p class="calc-foot__title">ESTIMATED 24 HOUR REVENUE:</p>
-            <p class="calc-foot__total">0.055 130 59 ETH
-                <span>($1275)</span>
+<div class="wrapper">
+    <div class="stat">
+        <div class="stat-item">
+            <div class="stat-item__icon stat-item__icon--01"></div>
+            <p class="stat-item__text">
+                <span>$30B</span>
+                Digital Currency Exchanged
             </p>
-            <p class="calc-foot__description">
-                Revenue will change based on mining difficulty and Ethereum price.
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-item__icon stat-item__icon--02"></div>
+            <p class="stat-item__text">
+                <span>10M+</span>
+                Trusted Wallets Investor
+            </p>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-item__icon stat-item__icon--03"></div>
+            <p class="stat-item__text">
+                <span>195</span>
+                Countries Supported
             </p>
         </div>
     </div>
+</div>
+
+<div class="wrapper">
+    <div class="text">
+        <h2 class="text__title">Check how much you can earn</h2>
+        <p class="text__description">Let’s check your hash rate to see how much you will earn today, Exercitation veniam
+            consequat sunt nostrud amet.</p>
+    </div>
+    <div class="calc-head">
+        <input type="text" class="calc-head__input" placeholder="Enter your hash rate">
+        <select name="" id="" class="calc-head__select">
+            <option value="th">TH/s</option>
+            <option value="ph">PH/s</option>
+            <option value="eh">EH/s</option>
+        </select>
+        <button type="submit" class="calc-head__btn">Calculate</button>
+    </div>
+</div>
+
+<div class="page-light">
+    <div class="calc-foot">
+        <p class="calc-foot__title">ESTIMATED 24 HOUR REVENUE:</p>
+        <p class="calc-foot__total">0.055 130 59 ETH
+            <span>($1275)</span>
+        </p>
+        <p class="calc-foot__description">
+            Revenue will change based on mining difficulty and Ethereum price.
+        </p>
+    </div>
+</div>
+
+<div class="page-light">
+    <div class="wrapper">
+        <div class="trade">
+            <h2 class="trade-title">Trade securely and market the high growth cryptocurrencies.</h2>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-item">
+                <img src="images/bitcoin.svg" alt="">
+
+                <p class="crypto-item__title">
+                    Bitcoin
+                    <sup>BTC</sup>
+                </p>
+                <p class="crypto-item__description">
+                    Digital currency in which a record of transactions is maintained.
+                </p>
+                <a href="#" class="crypto-item__btn">
+                    <span class="crypto-item__btn-text">Start&nbsp;mining</span>
+                    <span class="crypto-item__btn-icon"></span>
+                </a>
+            </div>
+
+            <div class="crypto-item">
+                <img src="images/ethereum.svg" alt="">
+                <p class="crypto-item__title">
+                    Ethereum
+                    <sup>ETH</sup>
+                </p>
+                <p class="crypto-item__description">
+                    Blockchain technology to create and run decentralized digital applications.
+                </p>
+                <a href="#" class="crypto-item__btn">
+                    <span class="crypto-item__btn-text">Start&nbsp;mining</span>
+                    <span class="crypto-item__btn-icon"></span>
+                </a>
+            </div>
+
+            <div class="crypto-item">
+                <img src="images/litecoin.svg" alt="">
+                <p class="crypto-item__title">
+                    Litecoin
+                    <sup>LTC</sup>
+                </p>
+                <p class="crypto-item__description">
+                    Cryptocurrency that enables instant payments to anyone in the world.
+                </p>
+                <a href="#" class="crypto-item__btn">
+                    <span class="crypto-item__btn-text">Start&nbsp;mining</span>
+                    <span class="crypto-item__btn-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-gradient">
+    <div class="wrapper">
+        <div class="form">
+            <div class="form-text">
+                <h3 class="form-text__title">
+                    Start mining now
+                </h3>
+                <h4 class="form-text__description">
+                    Join now with CRAPPO to get the latest news and start mining now
+                </h4>
+            </div>
+
+            <div class="form-letter">
+                <input type="text" class="form-letter__input" placeholder="Enter your email">
+                <button class="form-letter__btn" type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h2 class="footer-text__title">©2021 CRAPPO. All rights reserved</h2>
+            </div>
+            <div class="footer-links">
+                <ul class="footer-links__list">
+                    <li class="footer-list__item">
+                        <a href="#">
+                            <img src="images/fb.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer-list__item">
+                        <a href="#">
+                            <img src="images/inst.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer-list__item">
+                        <a href="#">
+                            <img src="images/yt.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer-list__item">
+                        <a href="#">
+                            <img src="images/tw.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="footer-list__item">
+                        <a href="#">
+                            <img src="images/lnkd.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="burger-menu.js"></script>
 </body>
 </html>

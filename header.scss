@@ -4,6 +4,80 @@ body{
   background: $dark-color;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #616161;
+  margin: 6px 15px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+.burger-menu-list{
+  background: linear-gradient(45deg, #f0ece6, #F1F1F2);
+  box-shadow: 0 0 15px 0;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+
+  .burger-container{
+    margin: 0 auto;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .burger-list{
+      list-style-type: none;
+      li{
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        :hover{
+          text-decoration: underline;
+        }
+        a{
+          font-family: Rubik, sans-serif;
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.show{
+  display: block;
+}
+
+@media (max-width: 815px){
+  .burger-menu{
+    display: block;
+  }
+
+  .logo{
+    display: none;
+  }
+}
+
 .header{
   max-width: 1202px;
   margin: 0 auto;
@@ -12,12 +86,20 @@ body{
   align-items: center;
   padding: 60px 15px 50px 15px;
 
+  @media (max-width: 815px){
+    padding: 30px 15px 30px 15px;
+  }
+
   .nav {
     display: flex;
     align-items: center;
 
     .nav-item{
       margin-left: 32px;
+
+      @media (max-width: 815px) {
+        display: none;
+      }
 
       .nav-link{
         color: $white-color;
@@ -36,17 +118,31 @@ body{
       border-right: 1px solid rgba(242, 242,242, 0.3);
       padding-right: 24px;
       font-weight: 500;
+
+      @media (max-width: 815px) {
+        display: block;
+      }
     }
 
     .nav-link--register{
       background: $light-blue-color;
       padding: 14px 32px;
       border-radius: 32px;
-
       font-family: Rubik, sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
+
+    }
+
+    .nav-link--register:hover{
+      background: #59a2f0;
+    }
+
+    .nav-item--register{
+      @media (max-width: 815px) {
+        display: block;
+      }
     }
   }
 }
